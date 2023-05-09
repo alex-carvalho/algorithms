@@ -19,6 +19,6 @@ echo "Go version ${INSTALLED_GO_VERSION} is installed"
 
 
 echo "Getting development tools"
-go get -u golang.org/x/tools/gopls@latest
-go get -u github.com/go-delve/delve/cmd/dlv@latest
-go get -u honnef.co/go/tools/cmd/staticcheck@latest
+go install golang.org/x/tools/gopls@latest
+go install github.com/go-delve/delve/cmd/dlv@latest
+go install honnef.co/go/tools/cmd/staticcheck@latest
