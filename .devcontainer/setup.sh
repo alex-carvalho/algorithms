@@ -16,3 +16,9 @@ rm go$VERSION.$OS-$ARCH.tar.gz
 
 INSTALLED_GO_VERSION=$(go version)
 echo "Go version ${INSTALLED_GO_VERSION} is installed"
+
+
+echo "Getting development tools"
+go get -u golang.org/x/tools/gopls@latest
+go get -u github.com/go-delve/delve/cmd/dlv@latest
+go get -u honnef.co/go/tools/cmd/staticcheck@latest
