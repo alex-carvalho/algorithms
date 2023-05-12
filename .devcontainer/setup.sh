@@ -17,6 +17,7 @@ rm go$VERSION.$OS-$ARCH.tar.gz
 INSTALLED_GO_VERSION=$(go version)
 echo "Go version ${INSTALLED_GO_VERSION} is installed"
 
+export GOPATH=/home/user/go
 
 echo "Getting development tools"
 go install golang.org/x/tools/gopls@latest
